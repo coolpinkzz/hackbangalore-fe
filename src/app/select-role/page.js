@@ -5,7 +5,7 @@ import entrepreneur from "../../../public/entrepreneur.png";
 import investor from "../../../public/investor.png";
 import "./page.css";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const SelectRole = () => {
@@ -17,13 +17,17 @@ const SelectRole = () => {
     if (role === "investor") {
       router.push("/select-category");
     } else {
-      router.push("/list-project");
+      router.push("/project-list");
     }
   };
   const handleRoleClick = (role) => {
-    localStorage.setItem("key", role);
+    localStorage.setItem("role", role);
     setRole(role);
   };
+
+  useEffect(() => {
+    setRole("");
+  }, []);
 
   return (
     <>
