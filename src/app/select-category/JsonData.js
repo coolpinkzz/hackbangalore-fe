@@ -1,0 +1,17 @@
+export const Category = [
+  "Renewable Energy",
+  "Agriculture",
+  "Green Energy",
+  "Food Waste",
+  "Green Building",
+  "Clean Water",
+  "Biodiversity",
+  "Waste Management",
+  "Transportation",
+  "Climate Change",
+  "Tourism",
+  "Healthcare",
+  "Education",
+  "E-waste",
+  "Global Warming",
+];
