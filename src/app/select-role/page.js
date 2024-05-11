@@ -14,10 +14,13 @@ const SelectRole = () => {
   const [role, setRole] = useState("");
 
   const handleClick = () => {
-    router.push("/select-category");
+    if (role === "investor") {
+      router.push("/select-category");
+    } else {
+      router.push("/list-project");
+    }
   };
   const handleRoleClick = (role) => {
-    console.log("role", role);
     localStorage.setItem("key", role);
     setRole(role);
   };
