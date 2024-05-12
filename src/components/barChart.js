@@ -50,7 +50,7 @@ export default function BarChart() {
     return (
         <div className="">
             <div className='border border-gray-400 pt-0 rounded-xl w-full h-fit my-auto  shadow-xl pb-2'>
-                <canvas width={600} height={350} id="myCanvas" ></canvas>
+                <canvas width={500} height={350} id="myCanvas" ></canvas>
                 <Text color="gray" className="text-center">Number of funding over year</Text>
             </div>
         </div>

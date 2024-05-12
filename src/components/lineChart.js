@@ -37,7 +37,7 @@ export default function LineChart() {
             {/* Doughnut chart */}
             <div className="">
                 <div className='border border-gray-400 pt-0 rounded-xl w-full h-fit my-auto  shadow-xl pb-2'>
-                    <canvas width={600} height={350} id='lineChart'></canvas>
+                    <canvas width={500} height={350} id='lineChart'></canvas>
                 </div>
             </div>
         </div>
