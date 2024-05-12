@@ -199,7 +199,7 @@ const ProjectList = () => {
                                                 <h1 className="text-2xl font-semibold">{item?.name}</h1>
                                                 <p className="mt-2 text-md font-semibold text-gray-500">{item?.title}</p>
                                                 <div className="flex gap-2 my-4">
-                                                    {item?.tags.map(item => <Tag variant='solid' className="primary-btn" >{item}</Tag>)}
+                                                    {item?.tags.map(item => <Tag key={item.id} variant='solid' className="primary-btn" >{item}</Tag>)}
                                                 </div>
                                             </div>
 

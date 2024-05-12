@@ -53,7 +53,7 @@ const ProjectDetails = ({params}) => {
                             </div>
                             <h1 className="text-3xl font-bold my-2">{projectList?.name}</h1>
                             <div className="flex gap-2 my-2">
-                                {projectList?.tags?.map((item) => <Tag variant='solid' className="primary-btn" >{item}</Tag>)}
+                                {projectList?.tags?.map((item) => <Tag key={item.id} variant='solid' className="primary-btn" >{item}</Tag>)}
                             </div>
                             <p className="w-[550px] font-medium">
                                 {projectList.title}
